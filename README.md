@@ -9,3 +9,12 @@
 
 ### Program Output
 ![Program Output](./Lab1/hello_output.png)
+
+## Lab 2
+**Lab Folder:** ./Lab2/
+
+### Array Output
+![Array Output](./Lab2/images/array_output.png)
+
+### Vector Output
+![Vector Output](./Lab2/images/vector_output.png)
