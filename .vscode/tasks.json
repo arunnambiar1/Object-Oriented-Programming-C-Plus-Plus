@@ -1,0 +1,44 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build array",
+      "type": "shell",
+      "command": "C:\\msys64\\ucrt64\\bin\\g++.exe",
+      "args": [
+        "${workspaceFolder}\\Lab2\\array.cpp",
+        "-o", "${workspaceFolder}\\Lab2\\array.exe",
+        "-std=c++17", "-Wall", "-Wextra",
+        "-Wl,-subsystem,console"
+      ],
+      "group": "build",
+      "problemMatcher": "$gcc"
+    },
+    {
+      "label": "run array",
+      "type": "shell",
+      "command": "${workspaceFolder}\\Lab2\\array.exe",
+      "dependsOn": "build array"
+    },
+
+    {
+      "label": "build vector",
+      "type": "shell",
+      "command": "C:\\msys64\\ucrt64\\bin\\g++.exe",
+      "args": [
+        "${workspaceFolder}\\Lab2\\vector.cpp",
+        "-o", "${workspaceFolder}\\Lab2\\vector.exe",
+        "-std=c++17", "-Wall", "-Wextra",
+        "-Wl,-subsystem,console"
+      ],
+      "group": "build",
+      "problemMatcher": "$gcc"
+    },
+    {
+      "label": "run vector",
+      "type": "shell",
+      "command": "${workspaceFolder}\\Lab2\\vector.exe",
+      "dependsOn": "build vector"
+    }
+  ]
+}
