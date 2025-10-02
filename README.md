@@ -18,3 +18,8 @@
 
 ### Vector Output
 ![Vector Output](./Lab2/images/vector_output.png)
+
+## Lab 3
+**Lab Folder:** ./Lab3/
+
+![RPG Output](./Lab3/images/rpg_output.png)
