@@ -23,3 +23,8 @@
 **Lab Folder:** ./Lab3/
 
 ![RPG Output](./Lab3/images/rpg_output.png)
+
+## Lab 5
+**Lab Folder:** ./Lab5/
+
+![Output](./Lab5/images/pokemon_output.png)
