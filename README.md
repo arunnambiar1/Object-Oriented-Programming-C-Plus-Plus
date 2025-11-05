@@ -28,3 +28,8 @@
 **Lab Folder:** ./Lab5/
 
 ![Output](./Lab5/images/pokemon_output.png)
+
+## Lab 4
+**Lab Folder:** ./Lab4/
+
+![Final Results](./Lab4/images/final_results.png)
