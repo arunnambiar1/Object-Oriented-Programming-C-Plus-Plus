@@ -22,12 +22,12 @@ void RPG::setHitsTaken(int new_hits) {
 }
 
 void RPG::updateExpLevel() {
-  // Increase exp by 50; if we cross 100, level up and adjust stats as brief states.
+  // Increase exp by 50; if we cross 100, level up and adjust stats 
   exp += 50.0f;
   if (exp >= 100.0f) {
     level += 1;
     exp = 0.0f;
-    luck += 0.10f;           // bump luck a bit
+    luck += 0.10f;           
     if (luck > 1.0f) luck = 1.0f;
   }
 }
@@ -54,8 +54,7 @@ void RPG::attack(RPG* opponent) {
 }
 
 void RPG::printStats() const {
-  // Format shown in the brief screenshot:
-  // "Name: NPC_X  Hits Taken: X  Luck: 0.xxxxxx  Exp: X.xxxxxx  Level: X  Status: Alive/Dead"
+// "Name: NPC_X  Hits Taken: X  Luck: 0.xxxxxx  Exp: X.xxxxxx  Level: X  Status: Alive/Dead"
   printf("Name: %s\t Hits Taken: %i\t Luck: %f\t Exp: %f\t Level: %i\t Status: %s\n",
          name.c_str(), hits_taken, luck, exp, level, (isAlive() ? "Alive" : "Dead"));
 }

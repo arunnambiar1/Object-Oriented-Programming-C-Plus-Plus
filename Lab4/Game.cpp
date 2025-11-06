@@ -7,7 +7,7 @@ using std::cout;
 Game::Game() {}
 
 Game::~Game() {
-  // ownership cleanup: delete heap-allocated RPGs
+
   for (RPG* p : players) delete p;
   players.clear();
   live_players.clear();
@@ -75,7 +75,7 @@ void Game::battleRound() {
   RPG* player1 = players[i1];
   RPG* player2 = players[i2];
 
-  // fight!
+  // fight
   while (player1->isAlive() && player2->isAlive()) {
     player1->attack(player2);
     if (!player2->isAlive()) break;
